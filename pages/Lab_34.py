@@ -56,13 +56,13 @@ st.text('''
 
 Silver = st.text_input('Was there a white precipitate? [y/n]')
 
-if Lead == 'y':
+if (Lead == 'y' or Lead == 'Y' or Lead == 'yes' or Lead == 'Yes'):
     Ions_found = Ions_found + '''
     - Lead'''
-if Mercury == 'y':
+if (Mercury == 'y' or Mercury == 'Y' or Mercury == 'yes' or Mercury == 'Yes'):
     Ions_found = Ions_found + '''
     - Mercury'''
-if Silver == 'y':
+if (Silver == 'y' or Silver == 'Y' or Silver == 'yes' or Silver == 'Yes'):
     Ions_found = Ions_found + '''
     - Silver'''
 
