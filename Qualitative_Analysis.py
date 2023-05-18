@@ -16,3 +16,7 @@ st.sidebar.success("Select a page above")
 st.title('Qualitative Analysis Labs')
 
 st.subheader('''Select lab being done on the side.''')
+
+st.subheader('''WARNING!
+
+The lab pages on this site do not remember your findings!  This is not to replace your lab notebook, rather to supplement with the interface.''')
