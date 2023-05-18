@@ -28,7 +28,7 @@ st.text('''1: Moisten a strip of red litmus paper with distilled water, place on
    
 Result: If a blue spot on litmus paper forms or the smell of ammonia is present, ammonium was in the compound.''')
 
-Ammonium = st.text_input('Did there red litmus turn blue or was there an ammonia smell present? [y/n]')
+Ammonium = st.text_input('Did the red litmus paper turn blue or was there an ammonia smell present? [y/n]')
 
 st.subheader('''Sodium Test:
 
