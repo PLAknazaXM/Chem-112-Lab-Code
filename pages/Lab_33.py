@@ -13,6 +13,8 @@ st.set_page_config(page_title="Lab 33",
 
 st.title('Lab 33: The Soluble Group')
 
+Ions_found = 'Ions found: '
+
 st.text('''This lab tests for Ammonium and Sodium Ions.''')
 
 st.subheader('''Ammonium Test:
@@ -26,6 +28,8 @@ st.text('''1: Moisten a strip of red litmus paper with distilled water, place on
    
 Result: If a blue spot on litmus paper forms or the smell of ammonia is present, ammonium was in the compound.''')
 
+Ammonium = st.text_input('Did there red litmus turn blue or was there an ammonia smell present? [y/n]')
+
 st.subheader('''Sodium Test:
 
 Notice: Test is very sensitive, let nothing come into contact with wire after cleaning!''')
@@ -35,3 +39,14 @@ st.text('''
 2: Dip clean wire into test solution, hold to outer region of flame.
 
 Result: If a luminous, fluffy, yellow-orage flame is persistent for around 30 seconds, sodium ions are present.''')
+
+Sodium = st.text_input('Was there a persistent yellow-orange flame? [y/n]')
+
+if (Ammonium == 'y' or Ammonium == 'Y' or Ammonium == 'yes' or Ammonium == 'Yes'):
+    Ions_found = Ions_found + '''
+    - Ammonium'''
+if (Sodium == 'y' or Sodium == 'Y' or Sodium == 'yes' or Sodium == 'Yes'):
+    Ions_found = Ions_found + '''
+    - Sodium'''
+
+st.text(Ions_found)
